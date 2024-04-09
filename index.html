@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <h2>Age Calculator</h2>
+        <label for="dob">Enter your Date of Birth:</label><br>
+        <input type="number" id="dob" placeholder="Day" min="1" max="31"> /
+        <input type="number" id="mob" placeholder="Month" min="1" max="12"> /
+        <input type="number" id="yob" placeholder="Year" min="1900" max="2024"><br><br>
+        <button id="myBtn" onclick="calculateAge()" class="btn"><i class="animation"></i>BUTTON<i class="animation"></i>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="result"></p>
+        </div>
+      </div>
+      
+
+  <script src="script.js"></script>
+</body>
+</html>
